@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block body %}
+<section id="main_what-influence-me">
+	<h2 class="title">Projects</h1>
+	<p>
+	  This page describes the projects I have done so far and the current project I'm working on.<br>
+	  It has four categories.
+    </p>
+	<ul>
+	  <li>The Prediction of Bitcoin Transactions (<em>Machine Learning</em>)</li>
+	  <li>browserhistory (<em>Python PyPI Package</em>)</li>
+	  <li><em>kcp18microblog.com (Web Development</em>)</li>
+	  <li>Weather App (<em>The Use of API</em>)</li>
+	</ul>
+	<p>
+	  Hope you enjoy reading about the projects.<br> *If you have a spare time, 
+	  I would recommend to run the programs to play around.
+	</p>
+	<div id="contents_body">
+		<div id="ml">
+			<h2 class="head_contents">The Prediction of Bitcoin Transactions (ML)</h2>
+
+			<h3>Google Cloud Platform, Apache Spark, and Python (Currenly Working On)</h3>
+            <p class="note">
+			  *Note <br>
+			  <em>
+			      This project is to predict the number of Bitcoin transactions in the future (by years);
+			      it can also be seen as the growth of the Bitcoin Blockchain size.
+			      I will push the source code/result to my github page pretty soon.
+			  </em>
+			</p>
+			<ul>
+			  <li>
+			    It uses Google Cloud Platform to perform the Machine Learning project.
+			  </li>
+			  <li>
+			    Bitcoin Blockchain Dataset from Google BigQuery (821GB) 
+			  </li>
+			  <li>
+			    Uses Google Dataproc to run the Machine Learning model in the Apache Spark framework. 
+			  </li>
+			  <li>
+			  	Runs Linear Regression Model to predict the future number of transactions in Bitcoin
+			  </li>
+			  <li>
+			  	PySpark to use Spark’s Machine Learning Library
+			  </li>
+			</ul>
+		</div>
+		<div id="browserhistory">
+			<h2 class="head_contents">browserhistory (A PyPI Package)</h2>
+
+			<h3>Firefox, Chrome, and Safari History  Datasets</h3>
+			<img src="static/thumbnails/firefox.png" width="150" height="150">
+			<img src="static/thumbnails/chrome.png" width="150" height="150">
+			<img src="static/thumbnails/safari.png" width="150" height="150">
+			<img src="static/images/browserdataset.png" width="532" height="184">
+			<p class="note">
+			  *Note <br>
+			  <em>
+			      This module was created for the purpose of promoting the digital wellbeing, 
+			      analyzing users’ browsing behaviors to help users understand their Internet use; 
+			      It’s not a hacking tool. If you're concerned with privacy, 
+			      you can read about the discussion I posted
+			      on <a href="https://www.reddit.com/r/Python/comments/98vbur/python_module_that_extracts_the_browsers_history/">
+			        Reddit
+			        </a>.
+			  </em>
+			</p>
+			<ul>
+			  <li>
+			  A Python module that extracts browsers history from a user’s local computer into Python objects
+			  </li>
+			  <li>
+			  It can also writes the browsing history data into csv files
+			  </li>
+			  <li>
+			  	Supports browsers: Firefox, Google Chrome, and Safari
+			  </li>
+			  <li>
+			  	Platforms: Linux, MacOS, and Windows
+			  </li>
+			  <li>
+			  	The source code is available on the <a href="https://github.com/kcp18/browserhistory">github</a> page
+			  </li>
+			  <li>
+			  	The module can be installed by $ python3 -m pip install browserhistory
+			  </li>
+			</ul>
+		</div>
+
+		<div id="microblog">
+			<h2 class="head_contents">kcp18microblog.com</h2>
+			<h3>Flask, MySQL with SQLAlechemy, and Linux Server</h3>
+			<img src="static/images/microblog.png" width="760" height="469">
+			<p class="note">
+			  *Note <br>
+			  <em>
+			    This website is a part of <a href="https://blog.miguelgrinberg.com">Miguel Grinberg</a>
+			    's flask tutorials. I emulated his design and implementations to build the website.
+			  </em>
+			</p>
+			<ul>
+			  <li>
+			  	A web blog that uses the Flask web framework along with the flask extensions
+			  </li>
+			  <li>
+			  It uses SQLAlchemy to store users and posts data in a MySQL database server
+			  </li>
+			  <li>
+			  	A virtual Linux server to run the web, supplemented by gunicorn, supervisor, and nginx softwares
+			  </li>
+			  <li>
+			  	Set up HTTPS encryption and acquire digital certificates by Let’s Encrypt
+			  </li>
+			  <li>
+			  	Please visit
+			  	<a href="https://kcp18microblog.com">https://kcp18microblog.com</a>
+			  	to play around
+			  </li>
+			</ul>
+		</div>
+		<div id="weatherapp">
+			<h2 class="head_contents">Weather App (Java) </h2>
+			<h3>JavaFX and Weather.com API (wunderground.com)</h3>
+			<img src="static/images/weatherapp.png" width="586" height="428">
+			<ul>
+			  <li>
+			  	It uses the JavaFX/Java to create an weather application
+			  </li>
+			  <li>
+			    Extracting the wunderground.com API to get the weather data in the JSON format
+			  </li>
+			  <li>
+			  	The application shows hourly, daily, and weekly weather forecasts based on the user’s selection of city 
+			  </li>
+			  <li>
+			  	The source code is available on the <a href="https://github.com/kcp18/WeatherApp_1">github</a> page
+			  </li>
+			</ul>
+		</div>
+	</div>
+</section>
+{% endblock %}

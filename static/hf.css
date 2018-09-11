@@ -1,0 +1,168 @@
+body {
+  font-family:      Arial;
+  font-size:        18px;
+  background-color: white;
+  line-height: 1.6;
+  color:black;
+  font-weight: 500;
+  margin-top:       1%;
+  margin-bottom:    1%;
+  margin-left:      10%;
+  margin-right:     10%;
+  border:           1px dotted gray;
+  padding:          10px 10px 10px 10px;
+}
+
+header.top{
+  font-family: Georgian, Geneva, Arial, sans-serif;
+  background-color: white;
+  height: 80px;
+
+  font-family:      Arial;
+  font-size:        18px;
+  background-color: white;
+  line-height: 1.6;
+  color:black;
+  font-weight: 500;
+}
+
+footer{
+  font-family:      Arial;
+  font-size:        18px;
+  background-color: white;
+  line-height: 1.6;
+  color:black;
+  font-weight: 500;
+  clear:right;
+}
+
+
+nav#navigation{
+  /* width: 400px; When width is fixed, the resizing does not work*/
+  float: right;
+  background-color: white;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0px 5px 0px 5px;
+}
+
+nav ul li{
+  display: inline;
+  margin: 0px 5px 0px 5px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  text-decoration: none;
+  border-bottom: none;
+
+}
+/*
+nav ul li.selected {
+  background-color: #99FFCC;
+}*/
+
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+  color: #398ad5;
+  font-weight: 400;
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h2.title {
+  font-family: Times;
+  font-size:        52px;
+  line-height: 56px;
+  color: #2771b5;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h2.head_contents {
+  font-family: Times;
+  font-size:   35px;
+  line-height: 56px;
+  color: #2771b5;
+  font-style: italic;
+  font-weight: 400;
+}
+
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  background-color: #f8f9fa;
+  border-spacing: 5px;
+  border: 1px solid #a2a9b1;
+  font-size: 88%
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+
+}
+.copyright {
+  font-size:        75%;
+  font-style:       italic;
+}
+.slogan {
+  font-size:        75%;
+  font-style:       italic;
+}
+.confirmentry {
+  font-weight:      600; 
+}
+
+/*** Tables ***/
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:        115%;
+  width:            30em;
+}
+input[type=submit] {
+  font-size:        125%;
+}
+select {
+  font-size:        125%;
+}
+
+#contents_table{
+  background-color: #CCCCCC;
+  margin: 10px;
+  padding: 15px;
+  font-size: 105%;
+}
+
+.contents_text{
+  text-align: center;
+}
+
+.head_contents{
+  border-bottom: 1px solid black;
+  color: blue;
+}
+
+nav ul {
+  margin: 0px;
+}
+
+section {
+  margin: 48px;
+}
+section#main_about {
+  margin-right: 400px;
+}
+
+aside#quickfacts {
+  width: 380px;
+  float: right;
+  background-color: white;
+  margin-right: 15px;
+  margin-top: 45px;
+}

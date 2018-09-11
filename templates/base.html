@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{the_title}}</title>
+    <link rel="stylesheet" href="static/hf.css"/>
+  </head>
+  <body>
+  	<header class="top">
+      <nav id="navigation">
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about-me">About Me</a></li>
+          <li class="selected"><a href="/projects">Projects</a></li>
+        </ul>
+    </nav>
+  		<div id="header_title"><a href="/about-me">Chanwoo Park</a>'s Backgrounds and Facts</div>
+  	</header>
+    {% block body %}
+    {% endblock %}
+    <footer>
+    	<div>
+        <a href="https://www.linkedin.com/in/chanwoo-park-106857149/">Linkedin</a> 
+        and <a href="https://github.com/kcp18/">Github</a> accounts
+      </div>
+    </footer>
+  </body>
+</html>
