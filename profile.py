@@ -15,9 +15,5 @@ def display_aboutMe():
 def display_projects():
 	return render_template('projects.html', the_title="Projects | Chanwoo")
 
-@app.route("/test")
-def display_test():
-	return render_template('test.html', the_title="Test | Chanwoo")
-
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run()
